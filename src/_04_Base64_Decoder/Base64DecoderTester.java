@@ -42,7 +42,7 @@ public class Base64DecoderTester {
 		answer[1] = (byte) 13;
 		answer[2] = (byte) 126;
 		check = Base64Decoder.convert4CharsTo24Bits("Bw1+");
-		// 000.001 110.000 110.101 111.1110
+		// 000.001 110.000 110.101 111.110
 		// 0000.0111 0000.1101. 0111.1110
 		assertArrayEquals(answer, check);
 	}
